@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: demo
+
+
+tracing:
+  zipkin:
+    enabled: true
+    sampler:
+      probability: 1.0
+  instrument-threads: true
+
+gcp:
+  project-id: "some-gcp-project"
+  tracing:
+    enabled: true
